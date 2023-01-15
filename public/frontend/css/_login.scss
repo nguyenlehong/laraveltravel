@@ -1,0 +1,39 @@
+.login {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px solid;
+    border-radius: 20px;
+    &-submit {
+        background-color: #6f2232;
+        border: #6f2232;
+        border-radius: 10px;
+        padding: 8px 0px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.login-background {
+    height: 100vh;
+    background-color: #4e4e50;
+    background-image: linear-gradient(to bottom right, #4e4e50, #eee2dc);
+}
+.color {
+    color: #1a1a1d;
+    color: #4e4e50;
+    color: #6f2232;
+    color: #950740;
+    color: #c3037f;
+}
+// #1A1A1D
+// #4E4E50
+// #6F2232
+// #950740
+// #C3037F
+// https://visme.co/blog/website-color-schemes/
