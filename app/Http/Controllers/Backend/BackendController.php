@@ -30,7 +30,7 @@ class BackendController extends Controller
             ->where('admin_password', $admin_password)->first();
 
         if ($result == true) {
-            Session::put('admin_name', $result->admin_name);
+            Session::put('admin_name', $result->admin_email);
             Session::put('admin_id', $result->admin_id);
             return Redirect::to('/list-user');
         } else {

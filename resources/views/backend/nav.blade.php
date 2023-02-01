@@ -17,39 +17,16 @@
 
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active text-light" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Quốc gia
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active text-light" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Phim mới
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+            
+           
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="{{URL::to('/list-car')}}" aria-current="page" href="#">Xe </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Phim chiếu rạp</a>
+                    <a class="nav-link active text-light" href="{{URL::to('/list-tuyenxe')}}" aria-current="page" href="#">Tuyến xe</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Phim thuyết minh</a>
+                    <a class="nav-link active text-light" href="{{URL::to('/list-lichChay')}}" aria-current="page" href="#">Lịch chạy</a>
                 </li>
             </ul>
 

@@ -1,0 +1,17 @@
+.lichChay {
+    width: 100%;
+    margin: 0 auto;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    &-list {
+        width: 55%;
+    }
+    &-add {
+        width: 40%;
+    }
+}

@@ -33,24 +33,58 @@
   color: #c3037f;
 }
 
+.home {
+  width: 1000px;
+  height: auto;
+  background-color: aqua;
+  margin: 0 auto;
+}
 .home-container {
+  display: inline-block;
+  margin: 0 auto;
+}
+.home-box {
+  width: 480px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.car {
+  width: 1200px;
+  margin: 0 auto;
+}
+.car-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-top: 20px;
+  padding: 10px;
 }
-.home-main {
-  min-height: 500px;
-  width: 900px;
-  margin-right: 20px;
+.car-list {
+  width: 55%;
 }
-.home-news {
-  min-height: 500px;
-  width: 500px;
+.car-add {
+  width: 40%;
+}
+
+.lichChay {
+  width: 100%;
+  margin: 0 auto;
+}
+.lichChay-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+.lichChay-list {
+  width: 55%;
+}
+.lichChay-add {
+  width: 40%;
 }
 
 .navbar-custom {
-  background-color: #1a1a1d;
+  background-color: #4e4e50;
 }
 
 .main {
