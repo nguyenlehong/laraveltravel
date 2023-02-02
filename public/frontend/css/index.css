@@ -36,8 +36,8 @@
 .home {
   width: 1000px;
   height: auto;
-  background-color: aqua;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .home-container {
   display: inline-block;
@@ -47,6 +47,21 @@
   width: 480px;
   display: inline-block;
   margin-right: 10px;
+}
+.home-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: #6f2232;
+}
+.home-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6f2232;
+  color: white;
+}
+.home-text a {
+  text-decoration: none;
+  color: black;
 }
 
 .car {
