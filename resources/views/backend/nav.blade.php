@@ -17,16 +17,19 @@
 
                     </ul>
                 </li>
-            
-           
+
+
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="{{URL::to('/list-xe')}}" aria-current="page" href="#">Xe </a>
+                    <a class="nav-link active text-light" href="{{URL::to('/list-xe')}}" aria-current="page" href="#">Xe
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="{{URL::to('/list-tuyenxe')}}" aria-current="page" href="#">Tuyến xe</a>
+                    <a class="nav-link active text-light" href="{{URL::to('/lotrinh')}}" aria-current="page" href="#">Lộ
+                        trình</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="{{URL::to('/list-lichChay')}}" aria-current="page" href="#">Lịch chạy</a>
+                    <a class="nav-link active text-light" href="{{URL::to('/list-lichChay')}}" aria-current="page"
+                        href="#">Lịch chạy</a>
                 </li>
             </ul>
 
