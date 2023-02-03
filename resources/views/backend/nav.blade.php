@@ -20,7 +20,7 @@
             
            
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="{{URL::to('/list-car')}}" aria-current="page" href="#">Xe </a>
+                    <a class="nav-link active text-light" href="{{URL::to('/list-xe')}}" aria-current="page" href="#">Xe </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-light" href="{{URL::to('/list-tuyenxe')}}" aria-current="page" href="#">Tuyến xe</a>

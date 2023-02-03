@@ -80,6 +80,14 @@
 .car-add {
   width: 40%;
 }
+.car-edit {
+  width: 500px;
+}
+
+.car-edit {
+  width: 600px;
+  margin: 0 auto;
+}
 
 .lichChay {
   width: 100%;

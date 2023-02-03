@@ -19,36 +19,46 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                        $i = 1;
+                        @endphp
+                        @foreach ($xe as $xe)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>01</td>
-                            <td>63A4 - 12345</td>
-                            <td>30 </td>
-                            <td>Xe mới</td>
-                            <td> Sửa | xóa</td>
+                            <th scope="row">
+                                @php
+                                echo $i++
+                                @endphp
+                            </th>
+                            <td>{{$xe->so_xe}}</td>
+                            <td>{{$xe->bien_so}}</td>
+                            <td>{{$xe->so_luong_ghe}}</td>
+                            <td>{{$xe->ghi_chu}}</td>
+                            <td> <a href="{{url('/xe/' . $xe->xe_id . '/edit')}}"> Sửa</a> | xóa</td>
                         </tr>
+                        @endforeach
 
                     </tbody>
                 </table>
             </div>
             <div class="car-add">
                 <h3>Thêm mới</h3>
-                <form>
+                <form action="{{url('xe')}}" method="POST">
+                    {!! csrf_field() !!}
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Số </label>
-                        <input type="number" class="form-control">
+                        <input type="number" name="so_xe" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Biển số </label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="bien_so" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Số lượng ghế </label>
-                        <input type="number" class="form-control">
+                        <input type="number" name="so_luong_ghe" class="form-control" required>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here"
-                            id="floatingTextarea"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                            name="ghi_chu"></textarea>
                         <label for="floatingTextarea">Ghi chú</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Thêm</button>
