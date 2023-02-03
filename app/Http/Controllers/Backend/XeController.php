@@ -91,8 +91,10 @@ class XeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($xe_id)
     {
-        //
+        Xe::destroy($xe_id);
+        return redirect('list-xe');
+
     }
 }

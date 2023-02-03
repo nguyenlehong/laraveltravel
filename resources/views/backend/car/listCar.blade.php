@@ -33,7 +33,13 @@
                             <td>{{$xe->bien_so}}</td>
                             <td>{{$xe->so_luong_ghe}}</td>
                             <td>{{$xe->ghi_chu}}</td>
-                            <td> <a href="{{url('/xe/' . $xe->xe_id . '/edit')}}"> Sửa</a> | xóa</td>
+                            <td> <a href="{{url('/xe/' . $xe->xe_id . '/edit')}}"> Sửa</a> |
+                                <form action="{{url('/xe' . '/' . $xe->xe_id)}}" method="post">
+                                    {{method_field( 'DELETE')}}
+                                    {{ csrf_field() }}
+                                    <button type="submit" onclick="return confirm('chac chua?')"> xóa </button>
+                                </form>
+                            </td>
                         </tr>
                         @endforeach
 
