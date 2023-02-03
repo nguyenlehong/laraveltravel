@@ -28,8 +28,8 @@
                         trình</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="{{URL::to('/list-lichChay')}}" aria-current="page"
-                        href="#">Lịch chạy</a>
+                    <a class="nav-link active text-light" href="{{URL::to('/chuyenxe')}}" aria-current="page"
+                        href="#">Chuyến xe</a>
                 </li>
             </ul>
 

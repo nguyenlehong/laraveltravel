@@ -5,6 +5,8 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\CarController;
 use App\Http\Controllers\Backend\XeController;
 use App\Http\Controllers\Backend\LoTrinhController;
+use App\Http\Controllers\Backend\ChuyenXeController;
+
 
 
 
@@ -25,5 +27,9 @@ Route::resource('/xe', XeController::class);
 Route::resource('/lotrinh', LoTrinhController::class);
 
 
-// lich chay
-Route::get('/list-lichChay', [CarController::class, 'list_lichChay']);
+// // lich chay
+// Route::get('/list-lichChay', [CarController::class, 'list_lichChay']);
+
+
+// chuyen xe 
+Route::resource('chuyenxe', ChuyenXeController::class);
