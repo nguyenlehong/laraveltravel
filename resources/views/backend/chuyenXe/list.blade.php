@@ -30,7 +30,8 @@
                         <tr>
                             <th scope="row">@php
                                 echo $i++;
-                                @endphp</th>
+                                @endphp
+                            </th>
                             <td>{{$chuyenxe->ngay}}</td>
                             {{-- <td>{{$chuyenxe->gio}}</td> --}}
                             <td>{{$gio}}</td>
@@ -41,7 +42,12 @@
                             <td>{{$chuyenxe->so_xe}} <br>
                                 {{$chuyenxe->bien_so}}
                             </td>
-                            <td> Sửa | xóa | khách </td>
+                            <td> <a href="{{url('/chuyenxe/' . $chuyenxe->chuyexe_id . '/edit')}}">sửa</a> | <form
+                                    action="{{url('/chuyenxe' . '/' . $chuyenxe->chuyexe_id)}}" method="post">
+                                    {{method_field( 'DELETE')}}
+                                    {{ csrf_field() }}
+                                    <button type="submit" onclick="return confirm('chac chua?')"> xóa </button>
+                                </form> | khách </td>
                         </tr>
                         @endforeach
 

@@ -81,9 +81,21 @@ class ChuyenXeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($chuyexe_id)
     {
-        //
+        $xe = Xe::all();
+        $lotrinh = LoTrinh::all();
+
+        $chuyenxe = DB::table('chuyen_xe')
+            ->join('xe', 'chuyen_xe.xe_id', '=', 'xe.xe_id')
+            ->join('lo_trinh', 'chuyen_xe.lotrinh_id', '=', 'lo_trinh.lotrinh_id')
+            ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*')
+            ->where('chuyexe_id', $chuyexe_id)
+            ->get();
+        return view('backend.chuyenXe.edit') 
+            ->with('xe', $xe)
+            ->with('lotrinh', $lotrinh)
+            ->with('chuyenxe', $chuyenxe);
     }
 
     /**
@@ -93,9 +105,12 @@ class ChuyenXeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $chuyexe_id)
     {
-        //
+        $chuyenxe = ChuyenXe::find($chuyexe_id);
+        $input = $request->all();
+        $chuyenxe->update($input);
+        return redirect('chuyenxe');
     }
 
     /**
@@ -104,8 +119,9 @@ class ChuyenXeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($chuyexe_id)
     {
-        //
+        ChuyenXe::destroy($chuyexe_id);
+        return redirect('chuyenxe');
     }
 }
