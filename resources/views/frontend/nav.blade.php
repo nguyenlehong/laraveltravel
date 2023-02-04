@@ -7,9 +7,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-           
-       
+
+
+
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="#">Lịch trình</a>
                 </li>
@@ -22,15 +22,17 @@
                 <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="#">Hướng dẫn đặt vé</a>
                 </li>
+
             </ul>
-
-
-
 
             <?php
                 $email= Session::get('user_email');
                 if ($email != NULL) {            
             ?>
+            <li class="nav-item dropdown d-flex me-2">
+                <a class="nav-link active text-light" aria-current="page" href="{{url('/ve_da_dat')}}">Vé đã đặt</a>
+
+            </li>
             <li class="nav-item dropdown d-flex me-2">
                 <a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -45,6 +47,7 @@
                     <li><a class="dropdown-item" href="{{URL::to('/logout')}}">Đăng xuất</a></li>
                 </ul>
             </li>
+
             <?php
                 }else{
             ?>
