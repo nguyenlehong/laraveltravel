@@ -18,5 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 require_once 'frontend.php';
 require_once 'backend.php';
-
 require_once 'user.php';

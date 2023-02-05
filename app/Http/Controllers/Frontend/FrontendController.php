@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\DB;
 use App\Models\ChuyenXe;
 use App\Models\Xe;
 use App\Models\LoTrinh;
+
+use Session;
+session_start();
 class FrontendController extends Controller
 {
     public function index()
@@ -30,10 +33,7 @@ class FrontendController extends Controller
         return view('frontend.register');
     }
 
-    public function dat_ve()
-    {
-        return view('frontend.ve.datVe');
-    }
+  
     public function ve_da_dat()
     {
         return view('frontend.ve.veDaDat');

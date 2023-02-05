@@ -29,4 +29,23 @@ class UserController extends Controller
         Session::flush();
         return Redirect::to('/');
     }
+    public function check_login(Request $request)
+    {
+        $user_email = $request->user_email;
+        $user_password = $request->user_password;
+        $result = DB::table('user')
+            ->where('user_email', $user_email)
+            ->where('user_password', $user_password)->first();
+
+        if ($result == true) {
+            Session::put('user_email', $result->user_email);
+            Session::put('user_id', $result->user_id);
+            return Redirect::to('/');
+        } else {
+            Session::put('message', 'Email hoặc mật khẩu không đúng!');
+            return view('frontend.login');
+        }
+    }
+
+
 }

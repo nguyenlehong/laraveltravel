@@ -15,7 +15,7 @@
                     if ($message != NULL) {  
                         echo $message;
                      }         
-                ?>
+                    ?>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Địa chỉ email</label>

@@ -1,6 +1,8 @@
 @extends('frontend.index')
 @section('content')
-
+@php
+$user_id= Session::get('user_id');
+@endphp
 <section class="home">
     <div class="home-container">
         @foreach ($chuyenxe as $chuyenxe)
@@ -14,7 +16,11 @@
                         </h3> <br>
                     </div>
                     <div class="col-md-8 home-text">
-                        <a href="{{url('/dat_ve')}}">
+
+                        @if ($user_id > 0)
+                        <a href="{{url('/dat_ve/'.$chuyenxe->chuyexe_id)}}">
+
+                            @endif
                             <div class="card-body ps-5">
                                 <h5 class="card-title">{{$chuyenxe->noi_bat_dau}} => {{$chuyenxe->noi_ket_thuc}}</h5>
                                 <p class="card-text"> 100km - {{$chuyenxe->thoi_gian}} -
