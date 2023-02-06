@@ -1,33 +1,37 @@
-@extends('frontend.index')
+@extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Lich su</h1>
+    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách</h1>
     <div class=" border rounded">
+        @foreach ($time as $time)
+
+        <h5>{{$time->noi_bat_dau}} -> {{$time->noi_ket_thuc}}</h5>
+        <h6>{{$time->ngay}} {{$time->gio}}</h6>
+        @endforeach
         <table class="table table-hover">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Tuyến Xe</th>
-                    <th scope="col">Ngày giờ</th>
-                    <th scope="col">Biển số xe</th>
-                    <th scope="col">Số lượng vé</th>
-                    <th scope="col">Nơi đón</th>
+                    <th scope="col">Tên</th>
+                    <th scope="col">SDT</th>
+                    <th scope="col">Số vé</th>
                     <th scope="col">Tổng tiền</th>
-                    {{-- <th scope="col">Trạng thái</th> --}}
+                    <th scope="col">Nơi đón</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($ve as $ve)
+                @php
+                $i = 1;
+                @endphp
+                @foreach ($khach as $khach)
+
                 <tr>
-                    <th scope="row" class="width10">{{$ve->ve_id}}</th>
-                    <td>{{$ve->noi_bat_dau}}<br> -> {{$ve->noi_ket_thuc}}</td>
-                    <td>{{$ve->ngay}}<br> {{$ve->gio}}</td>
-                    <td>xe {{$ve->so_xe}} <br> {{$ve->bien_so}}</td>
-                    <td>{{$ve->so_luong_ghe_dat}} vé</td>
-                    <td>{{$ve->diem_dn}}đ/vé</td>
-                    <td>{{number_format($ve->tong_tien)}}đ</td>
-                    {{-- <td><a class="huy_ve" href="{{url('/huy_ve/' .$ve->ve_id   )}}"> Có thể hủy</a> --}}
-                    </td>
+                    <th scope="row">{{$i++}}</th>
+                    <td>{{$khach->ten_user}}</td>
+                    <td>{{$khach->sdt}}</td>
+                    <td>{{$khach->so_luong_ghe_dat}}</td>
+                    <td>{{number_format($khach->tong_tien)}}đ</td>
+                    <td>{{$khach->diem_dn}}</td>
                 </tr>
                 @endforeach
 

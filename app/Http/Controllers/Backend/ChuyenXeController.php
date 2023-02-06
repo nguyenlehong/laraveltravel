@@ -124,4 +124,26 @@ class ChuyenXeController extends Controller
         ChuyenXe::destroy($chuyexe_id);
         return redirect('chuyenxe');
     }
+    public function khach($chuyexe_id){
+        $khach = DB::table('user')
+            ->join('ve', 'user.user_id', '=', 've.user_id')
+            ->join('chuyen_xe', 'chuyen_xe.chuyexe_id' , '=', 've.chuyexe_id')
+            ->join('xe', 'xe.xe_id', '=', 'chuyen_xe.xe_id')
+            ->join('lo_trinh','lo_trinh.lotrinh_id', '=', 'chuyen_xe.lotrinh_id')
+            ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*','user.*', 've.*')
+            ->where('chuyen_xe.chuyexe_id', $chuyexe_id)
+            ->get();
+        $time = DB::table('chuyen_xe')
+            ->join('ve', 'chuyen_xe.chuyexe_id' , '=', 've.chuyexe_id')
+            ->join('xe', 'xe.xe_id', '=', 'chuyen_xe.xe_id')
+            ->join('lo_trinh','lo_trinh.lotrinh_id', '=', 'chuyen_xe.lotrinh_id')
+            ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*', 've.*')
+            ->where('chuyen_xe.chuyexe_id', $chuyexe_id)
+            ->limit(1)
+            ->get();
+
+        return view('backend.chuyenXe.khach')
+        ->with('khach', $khach)
+        ->with('time', $time);
+    }
 }

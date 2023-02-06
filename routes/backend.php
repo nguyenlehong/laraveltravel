@@ -33,3 +33,7 @@ Route::resource('/lotrinh', LoTrinhController::class);
 
 // chuyen xe 
 Route::resource('chuyenxe', ChuyenXeController::class);
+
+
+// danh sach user tren 1 chuyen xe
+Route::get('/khach/{chuyexe_id}', [ChuyenXeController::class, 'khach']);

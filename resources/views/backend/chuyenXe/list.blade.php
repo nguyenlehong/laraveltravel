@@ -47,7 +47,7 @@
                                     {{method_field( 'DELETE')}}
                                     {{ csrf_field() }}
                                     <button type="submit" onclick="return confirm('chac chua?')"> xóa </button>
-                                </form> | khách </td>
+                                </form> | <a href="{{url('/khach/' .$chuyenxe->chuyexe_id)}}"> Khách</a> </td>
                         </tr>
                         @endforeach
 
