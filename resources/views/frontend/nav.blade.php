@@ -1,6 +1,6 @@
 <nav class="navbar navbar-custom navbar-expand-lg text-light">
     <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Vé xe online</a>
+        <a class="navbar-brand text-light" href="{{url('/')}}">Vé xe online</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,17 +20,20 @@
                     <a class="nav-link active text-light" aria-current="page" href="#">Dịch vụ gửi hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Hướng dẫn đặt vé</a>
+                    <a class="nav-link active text-light" aria-current="page" href="{{url('/huong_dan')}}">Hướng dẫn đặt
+                        vé</a>
                 </li>
 
             </ul>
 
             <?php
+                $user_id= Session::get('user_id');
                 $email= Session::get('user_email');
                 if ($email != NULL) {            
             ?>
             <li class="nav-item dropdown d-flex me-2">
-                <a class="nav-link active text-light" aria-current="page" href="{{url('/ve_da_dat')}}">Vé đã đặt</a>
+                <a class="nav-link active text-light" aria-current="page" href="{{url('/ve_da_dat/' .$user_id)}}">Vé đã
+                    đặt</a>
 
             </li>
             <li class="nav-item dropdown d-flex me-2">

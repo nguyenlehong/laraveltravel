@@ -1,7 +1,7 @@
 @extends('frontend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">vé đã đặt</h1>
+    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Lich su</h1>
     <div class=" border rounded">
         <table class="table table-hover">
             <thead>
@@ -14,7 +14,7 @@
                     <th scope="col">Số lượng vé</th>
                     <th scope="col">Nơi đón</th>
                     <th scope="col">Tổng tiền</th>
-                    <th scope="col">Trạng thái</th>
+                    {{-- <th scope="col">Trạng thái</th> --}}
                 </tr>
             </thead>
             <tbody>
@@ -27,18 +27,14 @@
                     <td>{{$ve->so_luong_ghe_dat}} vé</td>
                     <td>{{$ve->diem_dn}}đ/vé</td>
                     <td>{{number_format($ve->tong_tien)}}đ</td>
-                    <td><a class="huy_ve" href="{{url('/huy_ve/' .$ve->ve_id   )}}"> Có thể hủy</a>
+                    {{-- <td><a class="huy_ve" href="{{url('/huy_ve/' .$ve->ve_id   )}}"> Có thể hủy</a> --}}
                     </td>
                 </tr>
                 @endforeach
 
             </tbody>
         </table>
-        @foreach ($user as $user)
 
-        <a href="{{url('/lich_su/' .$user->user_id)}}"> <button type="button" class="btn btn-primary btn-lg">Vẽ đã
-                mua</button></a>
-        @endforeach
 
     </div>
     <nav aria-label="Page navigation example">

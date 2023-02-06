@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
+use Illuminate\Support\Facades\Redirect;
 
 use Session;
 session_start();
@@ -34,8 +35,61 @@ class VeController extends Controller
         $data['tong_tien'] = $giave * $request->so_luong_ghe_dat;
         $data['diem_dn'] = $request->diem_dn;     
         DB::table('ve')->insert($data);
-        Session::put('message', 'them tthanh cong');
+        // Session::put('message', 'them tthanh cong');
         return view('frontend.ve.veDaDat');
     }
-    
+    public function huong_dan(){
+        return view('frontend.ve.huongDan');
+    }
+    public function ve_da_dat($user_id)
+    {
+        $ve = DB::table('user')
+            ->join('ve', 'user.user_id', '=', 've.user_id')
+            ->join('chuyen_xe', 'chuyen_xe.chuyexe_id' , '=', 've.chuyexe_id')
+            ->join('xe', 'xe.xe_id', '=', 'chuyen_xe.xe_id')
+            ->join('lo_trinh','lo_trinh.lotrinh_id', '=', 'chuyen_xe.lotrinh_id')
+            ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*','user.*', 've.*')
+            ->where('user.user_id', $user_id)
+            ->where('chuyen_xe.trang_thai', '=', 'hien')
+            ->get();
+        $user = DB::table('user')
+           ->where('user_id', $user_id)->get();
+
+        return view('frontend.ve.veDaDat')
+        ->with('ve', $ve)
+        ->with('user', $user);
+    }
+    public function huy_ve($ve_id){
+        DB::table('ve')->where('ve_id', $ve_id)->delete();
+        return Redirect::to('ve_da_dat');
+    }
+    public function lich_su($user_id)
+    {
+        $ve = DB::table('user')
+            ->join('ve', 'user.user_id', '=', 've.user_id')
+            ->join('chuyen_xe', 'chuyen_xe.chuyexe_id' , '=', 've.chuyexe_id')
+            ->join('xe', 'xe.xe_id', '=', 'chuyen_xe.xe_id')
+            ->join('lo_trinh','lo_trinh.lotrinh_id', '=', 'chuyen_xe.lotrinh_id')
+            ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*','user.*', 've.*')
+            ->where('user.user_id', $user_id)
+            ->where('chuyen_xe.trang_thai', '=', 'an')
+            ->get();
+       
+
+        return view('frontend.ve.lichSu')
+        ->with('ve', $ve);
+    }
+
 }
+// SELECT chuyen_xe.ngay, xe.bien_so, ve.tong_tien
+// FROM user
+// INNER JOIN ve
+// on user.user_id = ve.user_id
+// INNER JOIN chuyen_xe
+// on chuyen_xe.chuyexe_id = ve.chuyexe_id
+// INNER JOIN xe
+// on xe.xe_id = chuyen_xe.xe_id
+// INNER JOIN lo_trinh
+// on lo_trinh.lotrinh_id = chuyen_xe.lotrinh_id
+// WHERE user.user_id = '1'
+// and chuyen_xe.trang_thai = 'hien'

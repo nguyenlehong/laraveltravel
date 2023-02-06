@@ -4,7 +4,9 @@
 $user_id= Session::get('user_id');
 @endphp
 <section class="home">
+
     <div class="home-container">
+
         @foreach ($chuyenxe as $chuyenxe)
 
         <div class="home-box">
@@ -34,6 +36,6 @@ $user_id= Session::get('user_id');
 
         @endforeach
 
-    </div>
 </section>
+
 @endsection
