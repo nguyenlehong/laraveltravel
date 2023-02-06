@@ -134,4 +134,9 @@
 .huy_ve {
   text-decoration: none;
   color: red;
+}
+
+.center-icon {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

@@ -4,7 +4,6 @@
 $user_id= Session::get('user_id');
 @endphp
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách xe</h1>
     <div class=" border rounded car">
         <div class="car-container">
             <div class="car-list">
@@ -12,17 +11,16 @@ $user_id= Session::get('user_id');
                 <table class="table">
                     <form action="{{url('/save_ve')}}" method="POST">
                         {!! csrf_field() !!}
-
                         <input type="hidden" name="user_id" value="{{$user_id}}">
                         @foreach ($chuyenxe as $chuyenxe)
                         <input type="hidden" name="chuyexe_id" value="{{$chuyenxe->chuyexe_id}}">
                         <input type="hidden" name="gia" value="{{$chuyenxe->gia}}">
-
-
                         <tbody>
                             <tr>
                                 <th>Chuyến xe: </th>
-                                <td>{{$chuyenxe->noi_bat_dau}} -> {{$chuyenxe->noi_ket_thuc}}</td>
+                                <td class="center-icon">{{$chuyenxe->noi_bat_dau}}&ensp;<ion-icon
+                                        name="arrow-forward-outline"></ion-icon>
+                                    &ensp;{{$chuyenxe->noi_ket_thuc}}</td>
                             </tr>
                             <tr>
                                 <th>Biển số </th>
@@ -43,14 +41,16 @@ $user_id= Session::get('user_id');
                         </tbody>
                         @endforeach
                 </table>
-                <p>Lưu ý: </p>
-                <p> -Giữ vệ sinh chung</p>
-                <p> -Bảo quản đồ đạt cá nhaan</p>
+                <p> <strong>Lưu ý:</strong> <br>
+                    -Giữ vệ sinh chung. <br>
+                    -Bảo quản đồ đạc cá nhân. <br>
+                    -Không để các vật dụng sắc nhọn, vật nặng hay đồ thủy tinh cạnh mình.<br>
+                    -Quý khách có khiếu nại, không hài lòng về thái độ phục vụ của nhân viên vui lòng liên hệ thổng đài
+                    0909032324 để được hổ trợ.
+                </p>
             </div>
             <div class="car-add">
                 <h3>Thông tin khách hàng</h3>
-
-
                 <div class="mb-3">
                     <label for="exampleInput" class="form-label">Tên khách hàng </label>
                     <input type="text" name="ten_user" class="form-control" required>

@@ -35,8 +35,7 @@ class VeController extends Controller
         $data['tong_tien'] = $giave * $request->so_luong_ghe_dat;
         $data['diem_dn'] = $request->diem_dn;     
         DB::table('ve')->insert($data);
-        // Session::put('message', 'them tthanh cong');
-        return view('frontend.ve.veDaDat');
+        return Redirect('/');
     }
     public function huong_dan(){
         return view('frontend.ve.huongDan');
