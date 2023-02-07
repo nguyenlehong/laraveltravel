@@ -8,8 +8,15 @@
             <form action="{{URL::to('/register-save')}}" method="POST">
                 {{ csrf_field() }}
                 <h3 class="text-center fw-bold">Đăng ký</h3>
-
                 <div class="mb-3">
+                    <div id="emailHelp" class="form-text text-danger text-center fs-5">
+                        <?php
+                    $message_login= Session::get('message_register');
+                    if ($message_login != NULL) {  
+                        echo $message_login;
+                    }         
+                    ?>
+                    </div>
                     <label for="exampleInputEmail1" class="form-label">Địa chỉ email</label>
                     <input type="email" name="user_email" class="form-control" id="exampleInputEmail1"
                         aria-describedby="emailHelp">

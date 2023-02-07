@@ -12,8 +12,8 @@
                     <label for="exampleInputEmail1" class="form-label">Số xe</label>
                     <select class="form-select" name="xe_id" aria-label="Default select example">
                         @foreach ($xe as $xe)
-                        @if ($xe->xe_id = $chuyenxe->xe_id)
-                        <option selected value="{{$xe->xe_id}}">{{$xe->so_xe}}</option>
+                        @if ($xe->xe_id == $chuyenxe->xe_id)
+                        <option selected value="{{$chuyenxe->xe_id}}">{{$xe->so_xe}}</option>
                         @else
                         <option value="{{$xe->xe_id}}">{{$xe->so_xe}}</option>
                         @endif
@@ -32,8 +32,9 @@
                     <label for="exampleInputEmail1" class="form-label">Lộ trình </label>
                     <select class="form-select" name="lotrinh_id" aria-label="Default select example">
                         @foreach ($lotrinh as $lt)
-                        @if ($lt->lotrinh_id = $chuyenxe->lotrinh_id)
-                        <option value="{{$lt->lotrinh_id}}">{{$lt->noi_bat_dau}}<ion-icon name="arrow-forward-outline">
+                        @if ($lt->lotrinh_id == $chuyenxe->lotrinh_id)
+                        <option selected value="{{$chuyenxe->lotrinh_id}}">{{$lt->noi_bat_dau}}<ion-icon
+                                name="arrow-forward-outline">
                             </ion-icon> ->{{$lt->noi_ket_thuc}}</option>
                         @else
                         <option value="{{$lt->lotrinh_id}}">{{$lt->noi_bat_dau}} ->

@@ -18,7 +18,7 @@ $user_id= Session::get('user_id');
                         <br>
                     </div>
                     <div class="col-md-8 home-text">
-                        @if ($user_id > 0)
+                        @if ($user_id)
                         <a href="{{url('/dat_ve/'.$chuyenxe->chuyexe_id)}}">
                             @endif
                             <div class="card-body ps-5">
