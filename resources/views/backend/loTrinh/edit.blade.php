@@ -1,10 +1,7 @@
 @extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách xe</h1>
     <div class="rounded car-edit">
-
-
         <div class="car-edit">
             <h3>Cập nhật</h3>
             <form action="{{url('lotrinh/' .$lt->lotrinh_id)}}" method="POST">
@@ -26,7 +23,7 @@
                     <label for="exampleInputEmail1" class="form-label">Giá </label>
                     <input type="number" name="gia" value="{{$lt->gia}}" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary">Thêm</button>
+                <button type="submit" class="btn btn-primary">Cập nhật</button>
             </form>
         </div>
     </div>

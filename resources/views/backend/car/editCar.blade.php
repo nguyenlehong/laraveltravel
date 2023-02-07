@@ -1,7 +1,6 @@
 @extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách xe</h1>
     <div class="rounded car-edit">
 
 

@@ -1,11 +1,20 @@
 @extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách lịch chạy</h1>
+    <h3 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách lịch chạy</h3>
     <div class=" border rounded lichChay">
         <div class="lichChay-container">
             <div class="lichChay-list">
-                <h3>Danh sách </h3>
+                <?php
+                $message= Session::get('message_lichchay');
+                if ($message) {  
+                    echo '
+                    <div class="alert alert-success" role="alert">
+                    Thêm xe thành công!
+                     </div>
+                    ';
+                 }         
+                ?>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -35,19 +44,28 @@
                             <td>{{$chuyenxe->ngay}}</td>
                             {{-- <td>{{$chuyenxe->gio}}</td> --}}
                             <td>{{$gio}}</td>
-                            <td>{{$chuyenxe->noi_bat_dau}} => <br>
+                            <td style="max-width:200px">{{$chuyenxe->noi_bat_dau}} <br>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
                                 {{$chuyenxe->noi_ket_thuc}}
                             </td>
                             <td>{{number_format($chuyenxe->gia)}}đ/vé</td>
                             <td>{{$chuyenxe->so_xe}} <br>
                                 {{$chuyenxe->bien_so}}
                             </td>
-                            <td> <a href="{{url('/chuyenxe/' . $chuyenxe->chuyexe_id . '/edit')}}">sửa</a> | <form
-                                    action="{{url('/chuyenxe' . '/' . $chuyenxe->chuyexe_id)}}" method="post">
-                                    {{method_field( 'DELETE')}}
-                                    {{ csrf_field() }}
-                                    <button type="submit" onclick="return confirm('chac chua?')"> xóa </button>
-                                </form> | <a href="{{url('/khach/' .$chuyenxe->chuyexe_id)}}"> Khách</a> </td>
+                            <td style="max-width:200px">
+                                <div class="display-left">
+                                    <a href="{{url('/chuyenxe/' . $chuyenxe->chuyexe_id . '/edit')}}">
+                                        <button type="button" class="btn btn-warning me-1">Sửa</button> </a>
+                                    <form action="{{url('/chuyenxe' . '/' . $chuyenxe->chuyexe_id)}}" method="post">
+                                        {{method_field( 'DELETE')}}
+                                        {{ csrf_field() }}
+                                        <button type="submit" class="btn btn-danger me-1"
+                                            onclick="return confirm('chac chua?')">
+                                            xóa </button>
+                                    </form> <a href="{{url('/khach/' .$chuyenxe->chuyexe_id)}}"> <button type="button"
+                                            class="btn btn-info">Khách</button></a>
+                                </div>
+                            </td>
                         </tr>
                         @endforeach
 
@@ -69,11 +87,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Ngày chạy</label>
-                        <input type="date" name="ngay" class="form-control">
+                        <input type="date" name="ngay" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"> Giờ chạy </label>
-                        <input type="time" name="gio" class="form-control">
+                        <input type="time" name="gio" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Lộ trình </label>

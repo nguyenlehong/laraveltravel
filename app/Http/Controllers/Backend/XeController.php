@@ -6,7 +6,8 @@ use Illuminate\Http\Request;;
 use App\Models\Xe;
 use Illuminate\Support\Facades\Redirect;
 
-
+use Session;
+Session_start();
 class XeController extends Controller
 {
     /**
@@ -42,6 +43,7 @@ class XeController extends Controller
     {
         $input = $request ->all();
         Xe::create($input);
+        Session::put('message_xe', 'xe');
         return redirect('list-xe');
     }
 

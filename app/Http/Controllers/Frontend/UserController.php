@@ -42,7 +42,7 @@ class UserController extends Controller
             Session::put('user_id', $result->user_id);
             return Redirect::to('/');
         } else {
-            Session::put('message', 'Email hoặc mật khẩu không đúng!');
+            Session::put('message_login', 'Email hoặc mật khẩu không đúng!');
             return view('frontend.login');
         }
     }

@@ -104,10 +104,10 @@
   padding: 10px;
 }
 .lichChay-list {
-  width: 55%;
+  width: 58%;
 }
 .lichChay-add {
-  width: 40%;
+  width: 30%;
 }
 
 .navbar-custom {
@@ -139,4 +139,8 @@
 .center-icon {
   display: flex;
   align-items: center;
+}
+
+.display-left {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

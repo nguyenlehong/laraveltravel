@@ -11,9 +11,9 @@
                 <h3 class="text-center fw-bold">Đăng nhập</h3>
                 <div id="emailHelp" class="form-text text-danger text-center fs-5">
                     <?php
-                    $message= Session::get('message');
-                    if ($message != NULL) {  
-                        echo $message;
+                    $message_login= Session::get('message_login');
+                    if ($message_login != NULL) {  
+                        echo $message_login;
                      }         
                     ?>
                 </div>

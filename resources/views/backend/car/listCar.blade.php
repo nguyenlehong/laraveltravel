@@ -1,11 +1,20 @@
 @extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h1 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách xe</h1>
+    <h3 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách xe</h3>
     <div class=" border rounded car">
         <div class="car-container">
             <div class="car-list">
-                <h3>Danh sách </h3>
+                <?php
+                $message= Session::get('message_xe');
+                if ($message) {  
+                    echo '
+                    <div class="alert alert-success" role="alert">
+                    Thêm xe thành công!
+                     </div>
+                    ';
+                 }         
+                ?>
                 <table class="table">
                     <thead>
                         <tr>
@@ -32,17 +41,23 @@
                             <td>{{$xe->so_xe}}</td>
                             <td>{{$xe->bien_so}}</td>
                             <td>{{$xe->so_luong_ghe}}</td>
-                            <td>{{$xe->ghi_chu}}</td>
-                            <td> <a href="{{url('/xe/' . $xe->xe_id . '/edit')}}"> Sửa</a> |
-                                <form action="{{url('/xe' . '/' . $xe->xe_id)}}" method="post">
-                                    {{method_field( 'DELETE')}}
-                                    {{ csrf_field() }}
-                                    <button type="submit" onclick="return confirm('chac chua?')"> xóa </button>
-                                </form>
+                            <td style=" width: 150px">{{$xe->ghi_chu}}</td>
+                            <td style="width: 150px">
+                                <div class="display-left">
+                                    <a href="{{url('/xe/' . $xe->xe_id . '/edit')}}">
+                                        <button type="button" class="btn btn-warning me-1">Sửa</button>
+                                    </a>
+                                    <form action="{{url('/xe' . '/' . $xe->xe_id)}}" method="post">
+                                        {{method_field( 'DELETE')}}
+                                        {{ csrf_field() }}
+                                        <button type="submit" class="btn btn-danger"
+                                            onclick="return confirm('Chắc chưa?')">
+                                            xóa </button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                         @endforeach
-
                     </tbody>
                 </table>
             </div>
