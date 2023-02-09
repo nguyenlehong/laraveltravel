@@ -22,6 +22,7 @@
                 </li>
             </ul>
 
+
             <?php
                 $user_id= Session::get('user_id');
                 $email= Session::get('user_email');

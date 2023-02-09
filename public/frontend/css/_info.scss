@@ -1,0 +1,45 @@
+.info {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: sans-serif;
+    border-bottom: 1px solid $color3;
+    &-name {
+        text-align: center;
+        color: $color4;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        width: 300px;
+    }
+    &-icon {
+        font-size: 50px;
+        color: $color4;
+        margin-right: 20px;
+    }
+    &-title {
+        & h2 {
+            font-size: 40px;
+            color: $color4;
+            font-weight: 700;
+        }
+    }
+    &-sub {
+        display: inline;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &-desc {
+        color: $color1;
+    }
+}

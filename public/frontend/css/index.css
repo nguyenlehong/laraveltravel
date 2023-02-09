@@ -67,6 +67,12 @@
   font-size: 20px;
   margin: 0 auto;
 }
+.home-ngay {
+  font-size: 20px;
+}
+.home-chuyendi {
+  font-size: 20px;
+}
 
 .car {
   width: 1200px;
@@ -108,6 +114,62 @@
 }
 .lichChay-add {
   width: 30%;
+}
+
+.info {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: sans-serif;
+  border-bottom: 1px solid #6f2232;
+}
+.info-name {
+  text-align: center;
+  color: #950740;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.info-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  width: 300px;
+}
+.info-icon {
+  font-size: 50px;
+  color: #950740;
+  margin-right: 20px;
+}
+.info-title h2 {
+  font-size: 40px;
+  color: #950740;
+  font-weight: 700;
+}
+.info-sub {
+  display: inline;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.info-desc {
+  color: #1a1a1d;
+}
+
+.about {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.about-title {
+  text-align: center;
+  color: #950740;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .navbar-custom {
