@@ -172,6 +172,23 @@
   margin-bottom: 30px;
 }
 
+.user {
+  width: 1200px;
+  margin: 0 auto;
+}
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+.user-list {
+  width: 55%;
+}
+.user-chart {
+  width: 40%;
+}
+
 .navbar-custom {
   background-color: #4e4e50;
 }

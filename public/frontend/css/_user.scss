@@ -1,0 +1,17 @@
+.user {
+    width: 1200px;
+    margin: 0 auto;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    &-list {
+        width: 55%;
+    }
+    &-chart {
+        width: 40%;
+    }
+}
