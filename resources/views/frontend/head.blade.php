@@ -10,6 +10,9 @@
 
     {{-- bootstrap js --}}
 
+    {{-- link js --}}
+    <script type="text/javascript" src="{{url('public')}}/frontend/js/main.js"></script>
+
     <script type="text/javascript" src="{{url('public')}}/frontend/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="{{url('public')}}/frontend/bootstrap/js/bootstrap.min.js"></script>
 

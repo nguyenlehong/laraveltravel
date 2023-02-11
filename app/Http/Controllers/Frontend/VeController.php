@@ -35,6 +35,7 @@ class VeController extends Controller
         $data['tong_tien'] = $giave * $request->so_luong_ghe_dat;
         $data['diem_dn'] = $request->diem_dn;     
         DB::table('ve')->insert($data);
+        Session::put('save_ve', '.');
         return Redirect('/');
     }
     public function huong_dan(){
@@ -60,7 +61,7 @@ class VeController extends Controller
     }
     public function huy_ve($ve_id){
         DB::table('ve')->where('ve_id', $ve_id)->delete();
-        return Redirect::to('ve_da_dat');
+        return Redirect::to('/');
     }
     public function lich_su($user_id)
     {
@@ -72,7 +73,8 @@ class VeController extends Controller
             ->select('chuyen_xe.*', 'xe.*', 'lo_trinh.*','user.*', 've.*')
             ->where('user.user_id', $user_id)
             ->where('chuyen_xe.trang_thai', '=', 'an')
-            ->get();
+            ->paginate(10);
+            // ->get();
        
 
         return view('frontend.ve.lichSu')

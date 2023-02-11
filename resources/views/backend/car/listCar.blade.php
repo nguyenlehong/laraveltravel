@@ -9,17 +9,13 @@
                 $message= Session::get('message_xe');
                 if ($message) {  
                     echo '
-                    <div class="alert alert-success" role="alert">
-                    Thêm xe thành công!
-                     </div>
+                    <div class="alert" id="alert">
+                    <span class="closebtn" onclick="message_themxe()">&times;</span>
+                    <strong>Thêm thành công!</strong>
+                </div>
                     ';
                  }         
                 ?>
-                <div class="alert">
-                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                    <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-                </div>
-
                 <table class="table">
                     <thead>
                         <tr>
@@ -94,26 +90,5 @@
     </div>
 
 </section>
-<style>
-    .alert {
-        padding: 20px;
-        background-color: #04AA6D;
-        color: white;
-    }
 
-    .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .closebtn:hover {
-        color: black;
-    }
-</style>
 @endsection

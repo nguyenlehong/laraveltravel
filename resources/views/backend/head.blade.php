@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="{{url('public')}}/frontend/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="{{url('public')}}/frontend/bootstrap/css/bootstrap.min.css">
 
+
+    {{-- link js --}}
+    <script type="text/javascript" src="{{url('public')}}/frontend/js/main.js"></script>
+
     {{-- bootstrap js --}}
 
     <script type="text/javascript" src="{{url('public')}}/frontend/bootstrap/js/bootstrap.js"></script>

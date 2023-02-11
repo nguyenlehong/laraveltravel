@@ -189,6 +189,51 @@
   width: 40%;
 }
 
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-container {
+  padding: 10px;
+  background-color: #198754;
+  color: white;
+  border-radius: 5px;
+}
+
+.closebtn {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
 .navbar-custom {
   background-color: #4e4e50;
 }

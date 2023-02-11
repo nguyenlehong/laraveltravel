@@ -57,7 +57,8 @@ $user_id= Session::get('user_id');
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Số điện thoại</label>
-                    <input type="number" name="sdt" class="form-control" required>
+                    <input type="text" name="sdt" class="form-control" pattern="[0-9]{10}"
+                        title="You can enter only 10 digits..." required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Số lượng vé </label>
@@ -65,7 +66,7 @@ $user_id= Session::get('user_id');
                 </div>
                 <div class="form-floating mb-3">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                        name="diem_dn"></textarea>
+                        name="diem_dn" required></textarea>
                     <label for="floatingTextarea">Điểm đón</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Xác nhận</button>

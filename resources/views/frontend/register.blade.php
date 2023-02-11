@@ -30,7 +30,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Nhập lại mật khẩu</label>
-                    <input type="repassword" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="confirm" class="form-control" id="exampleInputPassword1"
+                        onChange="check_password()">
                 </div>
 
                 <div class="d-grid gap-2">

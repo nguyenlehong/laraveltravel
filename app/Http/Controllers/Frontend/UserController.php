@@ -32,9 +32,9 @@ class UserController extends Controller
             $user->user_email = $data['user_email'];
             $user->user_password = $data['user_password'];
             $user->save();
-            Session::put('user_email', $user->user_email);
-            Session::put('user_id', $user);
-            return Redirect::to('/');
+            // Session::put('user_email', $user->user_email);
+            // Session::put('user_id', $user);
+            return view('frontend.login');
         }
         
 

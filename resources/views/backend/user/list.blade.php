@@ -10,7 +10,6 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Gmail</th>
-                            <th scope="col">Thao thác</th>
 
                         </tr>
                     </thead>
@@ -22,7 +21,7 @@
                         <tr>
                             <th scope="row"> {{$i++}}</th>
                             <td>{{$user->user_email}}</td>
-                            <td>xoa | sua</td>
+
                         </tr>
                         @endforeach
                     </tbody>
