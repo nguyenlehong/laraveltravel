@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\LoTrinh;
 use Illuminate\Support\Facades\Redirect;
+
+use Session;
+Session_start();
 class LoTrinhController extends Controller
 {
     /**
@@ -39,6 +42,7 @@ class LoTrinhController extends Controller
     {
         $input = $request->all();
         LoTrinh::create($input);
+        Session::put('message_lichtrinh', 'lt');
         return redirect('lotrinh');
     }
 

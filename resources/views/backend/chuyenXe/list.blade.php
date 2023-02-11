@@ -1,19 +1,19 @@
 @extends('backend.index')
 @section('content')
 <section class="main shadow p-3 mb-5 bg-body-tertiary rounded">
-    <h3 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách lịch chạy</h3>
+    <h3 class="bg-primary-subtle rounded-3 ps-3 pt-2 pb-2">Danh sách chuyến xe</h3>
     <div class=" border rounded lichChay">
         <div class="lichChay-container">
             <div class="lichChay-list">
                 <?php
-                $message= Session::get('message_lichchay');
+                $message= Session::get('message_chuyenxe');
                 if ($message) {  
                     echo '
-                    <div class="alert alert-success" role="alert">
-                    Thêm xe thành công!
-                     </div>
-                    ';
-                 }         
+                        <div class="alert" id="alert">
+                            <span class="closebtn" onclick="message_themxe()">&times;</span>
+                            <strong>Thêm thành công!</strong>
+                        </div>';
+                  }         
                 ?>
                 <table class="table table-striped">
                     <thead>

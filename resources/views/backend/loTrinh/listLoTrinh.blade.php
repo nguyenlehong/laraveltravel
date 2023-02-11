@@ -5,15 +5,16 @@
     <div class=" border rounded car">
         <div class="car-container">
             <div class="car-list">
+
                 <?php
                 $message= Session::get('message_lichtrinh');
                 if ($message) {  
                     echo '
-                    <div class="alert alert-success" role="alert">
-                    Thêm xe thành công!
-                     </div>
-                    ';
-                 }         
+                        <div class="alert" id="alert">
+                            <span class="closebtn" onclick="message_themxe()">&times;</span>
+                            <strong>Thêm thành công!</strong>
+                        </div>';
+                  }         
                 ?>
                 <table class="table table-striped">
                     <thead>

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 use App\Models\ChuyenXe;
 use App\Models\Xe;
 use App\Models\LoTrinh;
+use Session;
+Session_start();
 
 class ChuyenXeController extends Controller
 {
@@ -61,6 +63,7 @@ class ChuyenXeController extends Controller
     {
         $input = $request->all();
         ChuyenXe::create($input);
+        Session::put('message_chuyenxe', 'cx');
         return redirect('chuyenxe');
     }
 
