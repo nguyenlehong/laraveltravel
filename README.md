@@ -5,4 +5,8 @@
 
 Trước khi tiếp tục, hãy đảm bảo bạn đáp ứng các yêu cầu sau:
 <h2>Cách cài đặt</h2>
+Để sử dụng hệ thống, máy tính cần cài đặt những phần mềm sau:<br>
+Trình duyệt web: hệ thống hiện đang hoạt động trên Google Chrome<br>
+Phần mềm web server: Xampp, hệ thống đang sử dụng phiên bản 7.4.27<br>
+Bước 1: Khởi động Apache và MySQL trong Xampp
 <h2>cách sử dụng</h2>
