@@ -19,6 +19,8 @@
             MySQL, ứng dụng sẽ mở đến trình duyệt web có đường dẫn
             http://localhost/phpmyadmin/. Tạo mới 1 cơ sở dữ liệu có tên là
             “trailaravel”<br />
+             <img src="https://user-images.githubusercontent.com/93443014/218300113-07207ebb-bbf0-4a34-bea9-0c8fad0f856e.png"
+             alt="" width="400px" height="auto" />
             Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
