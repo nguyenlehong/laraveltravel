@@ -9,4 +9,6 @@ Trước khi tiếp tục, hãy đảm bảo bạn đáp ứng các yêu cầu s
 Trình duyệt web: hệ thống hiện đang hoạt động trên Google Chrome<br>
 Phần mềm web server: Xampp, hệ thống đang sử dụng phiên bản 7.4.27<br>
 Bước 1: Khởi động Apache và MySQL trong Xampp
+![image](https://user-images.githubusercontent.com/93443014/218293034-dcbcbf49-c4e0-4feb-8e32-5ebdfd569695.png)
+
 <h2>cách sử dụng</h2>
