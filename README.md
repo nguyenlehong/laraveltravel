@@ -65,4 +65,10 @@
             width="auto"
             height="400px"
         /><br>
+        <img
+            src=" https://user-images.githubusercontent.com/93443014/218301187-6ace91f8-1aff-47ea-b963-b1eeba462f4c.png) "
+            alt=""
+            width="auto"
+            height="400px"
+        />
         <p>Quản lý số lượng trong mỗi chuyến đi</p>
