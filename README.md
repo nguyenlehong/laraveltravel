@@ -13,7 +13,7 @@
             7.4.27<br />
             <br />
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp
-            ![image](https://user-images.githubusercontent.com/93443014/218298993-d2504863-5581-4f9e-a79c-d34371f30047.png)
+           ![image](https://user-images.githubusercontent.com/93443014/218298993-d2504863-5581-4f9e-a79c-d34371f30047.png)
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
             MySQL, ứng dụng sẽ mở đến trình duyệt web có đường dẫn
