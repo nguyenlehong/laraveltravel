@@ -9,7 +9,7 @@ $user_id= Session::get('user_id');
             <div class="car-list">
                 <h3>Chuyến xe </h3>
                 <table class="table">
-                    <form action="{{url('/save_ve')}}" method="POST">
+                    <form action="{{url('/save_ve')}}" method="POST" autocomplete="off">
                         {!! csrf_field() !!}
                         <input type="hidden" name="user_id" value="{{$user_id}}">
                         @foreach ($chuyenxe as $chuyenxe)

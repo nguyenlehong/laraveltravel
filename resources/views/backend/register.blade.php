@@ -5,7 +5,7 @@
 <body>
     <div class="login-background">
         <div class="login">
-            <form action="{{URL::to('/register-save')}}" method="POST">
+            <form action="{{URL::to('/register-save')}}" method="POST" autocomplete="off">
                 {{ csrf_field() }}
                 <h3 class="text-center fw-bold">Đăng ký</h3>
 

@@ -6,7 +6,7 @@
 
     <div class="login-background">
         <div class="login">
-            <form action="{{url('/check_login')}} " method="GET">
+            <form action="{{url('/check_login')}} " method="GET" autocomplete="off">
                 {{ csrf_field() }}
                 <h3 class="text-center fw-bold">Đăng nhập</h3>
                 <div id="emailHelp" class="form-text text-danger text-center fs-5">

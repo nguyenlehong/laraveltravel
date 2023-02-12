@@ -64,7 +64,7 @@
             </div>
             <div class="car-add">
                 <h3>Thêm mới</h3>
-                <form action="{{url('lotrinh')}}" method="POST">
+                <form action="{{url('lotrinh')}}" method="POST" autocomplete="off">
                     {{ csrf_field() }}
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nơi khởi hành </label>
