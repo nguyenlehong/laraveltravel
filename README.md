@@ -60,7 +60,7 @@
         <p><strong>- Đối với admin</strong></p>
         <p>Quản lý xe, chyến đi, lịch trình</p><br>
          <img
-            src=" https://user-images.githubusercontent.com/93443014/218301254-3fc04094-c928-4e19-8a75-d969365fe805.png "
+            src="https://user-images.githubusercontent.com/93443014/218301254-3fc04094-c928-4e19-8a75-d969365fe805.png "
             alt=""
             width="auto"
             height="400px"
