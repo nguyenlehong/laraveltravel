@@ -13,7 +13,7 @@
             <br />
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp <br>
      <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" 
-          alt="" width="500px" height="auto" />
+          alt="" width="auto" height="400px" />
         <br>
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
@@ -29,7 +29,9 @@
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
             mục htdocs trong thư mục xampp.<br />
             <strong>Bước 4: </strong> Khởi động trình duyệt web, nhập đường dẫn
-            http://localhost/LUANVAN Hệ thống dẫn đến trang như sau:
+           http://localhost/laraveltravel/ Hệ thống dẫn đến trang như sau:<br>
+             <img src="https://user-images.githubusercontent.com/93443014/218300556-4cc0fda5-7957-4e6a-af73-4f2ea4aeb005.png"
+             alt="" width="auto" height="400px" /> <>br
         </p>
         <h2>Chức năng chính</h2>
         <p><strong> - Đối với người dùng</strong></p>
