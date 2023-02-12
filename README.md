@@ -11,7 +11,7 @@
             Trình duyệt web: hệ thống hiện đang hoạt động trên Google Chrome<br />
             Phần mềm web server: Xamp
             <br />
-            <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp
+            <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp <br>
      <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" 
           alt="" width="500px" height="auto" />
         <br>
@@ -21,7 +21,7 @@
             http://localhost/phpmyadmin/. Tạo mới 1 cơ sở dữ liệu có tên là
             “laraveltravel”<br />
              <img src="https://user-images.githubusercontent.com/93443014/218300113-07207ebb-bbf0-4a34-bea9-0c8fad0f856e.png"
-             alt="" width="auto" height="300px" />
+             alt="" width="auto" height="300px" /> <br>
             Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
