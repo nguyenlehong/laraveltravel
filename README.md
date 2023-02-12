@@ -13,7 +13,7 @@
             7.4.27<br />
             <br />
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp
-     <img src="  ![Screenshot 2023-02-12 144706](https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png)" alt="" width="400px" height="auto" />
+     <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png)" alt="" width="400px" height="auto" />
         
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
