@@ -24,6 +24,8 @@
              alt="" width="auto" height="300px" /> <br>
             Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
+            <img src="https://user-images.githubusercontent.com/93443014/218300393-0b32be65-defd-491f-8a38-d425e872f698.png"
+             alt="" width="auto" height="400px" /><br>
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
             mục htdocs trong thư mục xampp.<br />
             <strong>Bước 4: </strong> Khởi động trình duyệt web, nhập đường dẫn
