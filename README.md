@@ -64,5 +64,5 @@
             alt=""
             width="auto"
             height="400px"
-        /><br><br>
+        /><br>
         <p>Quản lý số lượng trong mỗi chuyến đi</p>
