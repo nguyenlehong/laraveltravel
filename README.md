@@ -14,24 +14,24 @@
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp <br>
      <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" 
           alt="" width="auto" height="400px" />
-        <br>
+            <br>
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
             MySQL, ứng dụng sẽ mở đến trình duyệt web có đường dẫn
             http://localhost/phpmyadmin/. Tạo mới 1 cơ sở dữ liệu có tên là
             “laraveltravel”<br />
              <img src="https://user-images.githubusercontent.com/93443014/218300113-07207ebb-bbf0-4a34-bea9-0c8fad0f856e.png"
-             alt="" width="auto" height="300px" /> <br>
+             alt="" width="auto" height="300px" /> <br> <br>
             Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
             <img src="https://user-images.githubusercontent.com/93443014/218300393-0b32be65-defd-491f-8a38-d425e872f698.png"
-             alt="" width="auto" height="400px" /><br>
+             alt="" width="auto" height="400px" /><br><br>
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
             mục htdocs trong thư mục xampp.<br />
             <strong>Bước 4: </strong> Khởi động trình duyệt web, nhập đường dẫn
            http://localhost/laraveltravel/ Hệ thống dẫn đến trang như sau:<br>
              <img src="https://user-images.githubusercontent.com/93443014/218300556-4cc0fda5-7957-4e6a-af73-4f2ea4aeb005.png"
-             alt="" width="auto" height="400px" /> <>br
+             alt="" width="auto" height="400px" /> <br><br>
         </p>
         <h2>Chức năng chính</h2>
         <p><strong> - Đối với người dùng</strong></p>
