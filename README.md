@@ -21,8 +21,8 @@
             http://localhost/phpmyadmin/. Tạo mới 1 cơ sở dữ liệu có tên là
             “laraveltravel”<br />
              <img src="https://user-images.githubusercontent.com/93443014/218300113-07207ebb-bbf0-4a34-bea9-0c8fad0f856e.png"
-             alt="" width="auto" height="300px" /> <br> <br>
-            Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
+             alt="" width="auto" height="400px" /> <br> <br>
+            Sau đó chọn Import → Choose file, sau đó chọn laraveltravel.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
             <img src="https://user-images.githubusercontent.com/93443014/218300393-0b32be65-defd-491f-8a38-d425e872f698.png"
              alt="" width="auto" height="400px" /><br><br>
