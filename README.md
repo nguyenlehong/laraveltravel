@@ -31,7 +31,7 @@
             <strong>Bước 4: </strong> Khởi động trình duyệt web, nhập đường dẫn
            http://localhost/laraveltravel/ Hệ thống dẫn đến trang như sau:<br>
              <img src="https://user-images.githubusercontent.com/93443014/218300556-4cc0fda5-7957-4e6a-af73-4f2ea4aeb005.png"
-             alt="" width="auto" height="400px" /> <br><br>
+             alt="" width="auto" height="400px" /> <br>
         </p>
         <h2>Chức năng chính</h2>
         <p><strong> - Đối với người dùng</strong></p>
@@ -55,7 +55,7 @@
             alt=""
             width="auto"
             height="400px"
-        /><br><br>
+        /><br>
         <p>Xem lại thông tin vé đã đặt</p>
         <p><strong>- Đối với admin</strong></p>
         <p>Quản lý xe, chyến đi, lịch trình</p>
