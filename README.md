@@ -49,8 +49,20 @@
         <p><strong> - Đối với người dùng</strong></p>
         <p>Cần tạo 1 tài khoản với gmail và mật khẩu:</p>
         <p>Chọn chuyến xe cần đặt vé</p>
-        <p>Điền đầy đủ thông tin để đặt vé</p>
+        <p>Điền đầy đủ thông tin để đặt vé</p><br>
+                <img
+            src="https://user-images.githubusercontent.com/93443014/218301293-4856ddba-c5a3-42d2-8457-ddfa4cc0025f.png  "
+            alt=""
+            width="auto"
+            height="400px"
+        /><br><br>
         <p>Xem lại thông tin vé đã đặt</p>
         <p><strong>- Đối với admin</strong></p>
-        <p>Quản lý xe, chyến đi, lịch trình</p>
+        <p>Quản lý xe, chyến đi, lịch trình</p><br>
+         <img
+            src=" https://user-images.githubusercontent.com/93443014/218301254-3fc04094-c928-4e19-8a75-d969365fe805.png "
+            alt=""
+            width="auto"
+            height="400px"
+        /><br><br>
         <p>Quản lý số lượng trong mỗi chuyến đi</p>
