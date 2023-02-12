@@ -12,15 +12,16 @@
             Phần mềm web server: Xamp
             <br />
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp
-     <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" alt="" width="500px" height="auto" />
+     <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" 
+          alt="" width="500px" height="auto" />
         <br>
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
             MySQL, ứng dụng sẽ mở đến trình duyệt web có đường dẫn
             http://localhost/phpmyadmin/. Tạo mới 1 cơ sở dữ liệu có tên là
-            “trailaravel”<br />
+            “laraveltravel”<br />
              <img src="https://user-images.githubusercontent.com/93443014/218300113-07207ebb-bbf0-4a34-bea9-0c8fad0f856e.png"
-             alt="" width="400px" height="auto" />
+             alt="" width="auto" height="300px" />
             Sau đó chọn Nhập → Chọn tệp, sau đó chọn luanvan.sql và nhấn Thực
             hiện để tiến hành nhập dữ liệu<br />
             <strong>Bước 3: </strong>ép toàn bộ source code của hệ thống vào thư
