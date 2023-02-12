@@ -9,12 +9,11 @@
         <p>
             Để sử dụng hệ thống, máy tính cần cài đặt những phần mềm sau:<br />
             Trình duyệt web: hệ thống hiện đang hoạt động trên Google Chrome<br />
-            Phần mềm web server: Xampp, hệ thống đang sử dụng phiên bản
-            7.4.27<br />
+            Phần mềm web server: Xamp
             <br />
             <strong>Bước 1: </strong> Khởi động Apache và MySQL trong Xampp
-     <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" alt="" width="400px" height="auto" />
-        
+     <img src="https://user-images.githubusercontent.com/93443014/218299258-434f57a4-a3f3-4deb-bc57-6112e94dca40.png" alt="" width="500px" height="auto" />
+        <br>
             <br />
             <strong> Bước 2:</strong> thêm cơ sở dữ liệu Nhấn vào Admin trên
             MySQL, ứng dụng sẽ mở đến trình duyệt web có đường dẫn
